@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>FORMS in HTML</h1>
+    <form action="/" method="get">
+
+
+        <fieldset>
+            <legend>How much would you rate us?</legend>
+            <label for="feedback"></label>
+            <select name="feedback" id="feedback">
+                <option hidden value="">Rate us here &nbsp;</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="4">5</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Message for us?</legend>
+            <label for="Message"></label>
+            <textarea name="Message" id="Message" placeholder="write your meaasge..." rows="5" cols="40"></textarea>
+        </fieldset>
+        
+
+        <fieldset>
+            <legend><p>Rate our Website</p></legend>
+            <label for="1">1<input type="radio" name="Rating" id="1" value="1"></label>&nbsp;&nbsp;
+            <label for="2">2<input type="radio" name="Rating" id="2" value="2"></label>&nbsp;&nbsp;
+            <label for="3">3<input type="radio" name="Rating" id="3" value="3"></label>&nbsp;&nbsp;
+            <label for="4">4<input type="radio" name="Rating" id="4" value="4"></label>&nbsp;&nbsp;
+            <label for="5">5<input type="radio" name="Rating" id="5" value="5"></label>
+
+        </fieldset>
+        <br>
+        
+        <fieldset>
+            <legend><b>User Details</b></legend>
+            Enter your age:  <label for="age"><input type="number" name="age" id="age" max="100" min="10" placeholder="age"></label>
+        
+        <br>
+        <br>
+    
+            Enter your email:  <label for="email"><input type="email" id="email" name="email" required placeholder="email" ></label>
+            <br>
+            <br>
+        
+    
+            Enter your password:  <label for="password"><input type="password" id="password" name="password" minlength="8" placeholder="password (minimum 8 characters)"></label>
+        <br>
+        <br>
+        
+    website URL (optional):  <label for="URL"><input type="url" id="url" name="URL" placeholder="enter URL"></label>
+        <br>
+        <br>
+    
+            <label for="T&C"><input type="checkbox" id="T&C" name="T&C" required> I accept the terms and conditions.</label>
+        </fieldset>
+
+
+
+<br>
+        <button type="submit">submit form</button>
+    </form>
+</body>
+
+</html>
+
+
+
+<!-- Topics
+HTML form,label, input
+
+Problem Statement
+Create a webpage with an form and input tag. This form should have:
+
+1. A dropdown menu for feedback type.
+2. A text area for user's message.
+3. Radio buttons for website rating.
+4. An input for age, type: number. It should allow numbers from 10 to 100.
+5. An email input field. This field is mandatory.
+6. A password input field. Ensure a minimum length of 8 characters.
+7. An optional website URL input field.
+8. A checkbox for terms and conditions.
+9. A submission button.
+All the fields except for submit button should be having labels that when clicked points to the item/field (Hint: Use id
+for the same). -->
